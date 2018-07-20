@@ -1,0 +1,25 @@
+h1 {
+    color: firebrick;
+    width: auto;
+}
+ol, ul {color: darkorchid
+}
+html {
+    font-size: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+p, li {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0,5px;
+}
+h2 {
+    font-size: 30px;
+}
+html {
+    background-color: #F9F9BC;
+}
