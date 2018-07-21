@@ -13,8 +13,8 @@
    
     <h2>Tworzenie list</h2>
         <p><b>Listy dzielą się na ordered (uporządkowane, takie gdzie kolejność elementów ma znaczenie) i unordered (takie gdzie kolejność elementów nie ma znaczenia)</b></p>
+    <p>Elementy znajdujące się na listach oznacza się elementem <b>"li"</b></p>
         <p> Listy ordered czyli uporządkowane oznacza się elementem<b>"ol"</b></p>
-        <p>Elementy znajdujące się na listach oznacza się elementem "li"</p>
         <b><ol>
             <li>japka</li>
             <li>ziemniaki</li>
@@ -37,11 +37,56 @@
         <img src="images/1.jpg" alt="dupa">
         <img src="images/2.jpg" alt="dupa">
     
-    <h1>CSS - pozwala na aplikowanie styli do elementów w dokumencie HTML.</h1>
+    <h1>CSS</h1>
+    
     <p>Style mogą być aplikowane zarówno do pojedynczych elementów np. <b>h1</b>, jak i wielu na raz oddzielanych <b>przecinkiem np.ol,ul</b>.</p>
-    <h2>Kolorowanie.</h2>
-    <p>Przykładową aplikacją stylu jest określenie koloru, można określać wiele różnych właściwości (np. granic do jakich ma się ograniczać kolorowanie czy obramowanie) które oddzielamy <b>";".</b></p>
+    
+    <h2>Kolorowanie tekstu.</h2>
+        <p>Przykładową aplikacją stylu jest określenie koloru, można określać wiele różnych właściwości (np. granic do jakich ma się ograniczać kolorowanie czy obramowanie) które oddzielamy <b>";".</b></p>
+    
+    <h2>Dodawanie cienia do tekstu.</h2>
+        <p>Cienie do tekstu dodwane są komendą <b>"text shadow". Określić należy 4 wartości:</b></p>
+        <ol>
+        <li>px - horizontal offset, negatywna w lewo.</li>
+        <li>px - vertical offset, negatywne w górę.</li>
+        <li>px - blur radius, im większy tym większe rozmycie.</li>
+        <li>czwarta określa kolor cienia.</li>
+        </ol>
+    
     <h2>Zmiana Fontów.</h2>
-    <p>Fonty</p>
+        <p>Fonty - można określać cechy takie jak np:</p>
+        <ul>
+        <li>rozmiar - <b>"font-size".</b></li>
+        <li>wysokość linii oddzielającej wyrazy - <b>"Line height".</b></li>
+        <li>czcionkę <b>"Font-family</b></li>
+        </ul>
+    <p>Podobnie jak w przypadku kolorów, cechy pisma mogą być aplikowane zarówno do pojedynczych jak i wielu elementów na raz.</p>
+    
+    <h2>BOXy</h2>
+        <p>Elementy w CSS oparte są na pudełkach - każdym zajmującym inną część strony</p>
+        <img src="images/box-model.png" alt="box model">
+        <p>Do "Margin" i "Padding" podajemy wartości <b>pierwsza określa gór i dół strony</b> ; druga prawą i lewą stronę (auto - automatycznie rozdziela powierzchnię pomiędzy strony), trzecia i czwarta pozwalają kontrolować każdy margines.</p>
+    
+    <h2>Java Script</h2>
+    <b><p>Variables - są to pojemniki na values, deklarowane są komendą "var" po czym nazwaniem ich. Należy pamiętać o dużych/małych znakach, js rozróżnia wielkość liter.</p>
+        <b><ul>
+        <li>String - sekwencja tekstu oznaczana ''</li>
+        <li>Number - nie są oznaczane quotami</li>
+        <li>Boolean - oznaczane false/true</li>
+        <li>Array - struktura pozwalająca przechowywać wiele wartości w jednym reference, wartości zamykane [], słowa oznaczane ''.</li>
+        <li>Object - może to być cokolwiek.</li>
+        </ul></b>
+    <p>Comments - komentaze dodawane jak w CSS: /* Comment */.</p>
+    <p>Operators</p>
+        <b><ul>
+        <li>Addition - służy do dodawania dwóch numerów, łączeniu dwóch stringów.</li>
+        <li>Assignment - przypisuje wartość do Variable.</li>
+        <li>Equality - eobi test czy dwie wartości są sobie równe i zwraca Boolean (true/false), 'symbol ==='.</li>
+        <li>Not, Does-not-equal - zwraca logicznie przeciwną value od tej, którą poprzedza 'symbol !'. Może być używane wraz z equality '!==' operator sprawdza czy dwie wartości <i>nie</i> są równe.</li>
+        </ul></b>
+    <p>Conditionals - pozwala sprawdzić czy expression zwraca troe/false i w zależności od wyniku odpala inny kod, przykładowe 'if - else'.</p>
+    <p>Functions - służą do tworzenia funkcjonalności do późniejszego ponownego używania.</p>
+    <p>Events.</p></b>
+<script src="scripts/main.js"></script>
 </body>
 </html>
