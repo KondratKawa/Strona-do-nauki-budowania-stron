@@ -1,1 +1,1 @@
-alert('to pa');
+alert('Wstawaj piękna kobietko');
