@@ -23,7 +23,7 @@ p, li {
 }
 h2 {
     font-size: 30px;
-     width: 1200px;
+    width: 1200px;
     text-align: left;
 }
 body {
@@ -34,8 +34,8 @@ body {
     border: 5px solid black;
 }
 img {
-    display: block;
-    margin: auto;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
 }
 p {
     width: auto;
@@ -48,23 +48,77 @@ p {
 .dropdown {
     position: relative;
     display: inline-block;
+    font-size: 20px;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 500px;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 5px 5px;
     z-index: 1;
+    float: right;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    float: right;
+    width: 400px;
+    margin: 35px 800px;
 }
-.btn {
+#Spistresci {
+    float: right;
+    width: 120px;
+    margin: 5px 5px 5px 800px;
+}
+.mainbutton {
     background-color: whitesmoke;
     border: 2px solid black;
+    text-align: center;
+    padding: 40px auto;
+    width: 750px;
+    font-size: 40px;
+    box-shadow: 0px 8px 16px 0px;
+    line-height: 2;
+    position: inherit;
+    display: grid;
+    grid: 150px / 150px 150px;
+    border-radius: 15px;
+    margin: 1px 10px 5px 0px;
+}
+#top {
+    font-size: 20px;
     text-align: right;
-    padding: 50px 500px;
+    width: 130px;
+    position: fixed;
+    bottom: 10px;
+    right: 580px;
+}
+#Podstawy {
+    border-color: #4CAF50;
+    color: green;
+}
+#Podstawy:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+#CSS {
+    border-color: #2196F3;
+    color: dodgerblue
+}
+#CSS:hover {
+    background: #2196F3;
+    color: white;
+}
+#JSC {
+    border-color: #ff9800;
+    color: orange;
+}
+#JSC:hover {
+    background: #ff9800;
+    color: white;
+}
+.rozdzial {
+    width: 750px;
 }

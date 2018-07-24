@@ -7,25 +7,25 @@
 </head>
 <body>
 
-<div id="ABC">
 <h1 id="TOP">Strona do nauki budowania stron</h1>
 
 <div class="dropdown">
-    <span><h2>Spis treści:</h2></span>
+    <span id="Spistresci">Spis treści:</span>
     <div class="dropdown-content">
     <ol>
     <li><a href="#Podstawy">Podstawy</a></li>
     <li><a href="#CSS">CSS</a></li>
     <li><a href="#JSC">Java Script</a></li>
+    <li><a href="#CSS">Sprawdzam</a></li>
     </ol>
     </div>
 </div>  
   
-<button onclick="myCOL()"><h2>HTML.</h2></button>
+<button id="Podstawy" class="mainbutton" onclick="myCOL()">HTML.</button>
     
-<div id = "myAKA">
+<div class="rozdzial" id = "myAKA">
 
-<h2 id="Podstawy">Dodawanie akapitów i zdań</h2>
+<h2 id="AkapityZdania">Dodawanie akapitów i zdań</h2>
     <p>Użycie "h1-6"służy do umieszczania akapitów</p>
     <p>Ikonka "p" służy do umieszczania zdań</p>
    
@@ -56,17 +56,17 @@
     
  </div>
 
-<button class="btn" onclick="myCOL2()">
+<button id="CSS" class="mainbutton" onclick="myCOL2()">
 CSS.
 </button>
 
-<div id = "myAKA2">
+<div class="rozdzial" id = "myAKA2">
 <p>Style mogą być aplikowane zarówno do pojedynczych elementów np. <b>h1</b>, jak i wielu na raz oddzielanych <b>przecinkiem np.ol,ul</b>.</p>
     
-<h2>Kolorowanie tekstu.</h2>
+<h2>Kolorowanie.</h2>
         <p>Przykładową aplikacją stylu jest określenie koloru, można określać wiele różnych właściwości (np. granic do jakich ma się ograniczać kolorowanie czy obramowanie) które oddzielamy <b>";".</b></p>
     
-<h2>Dodawanie cienia do tekstu.</h2>
+<h2>Cienie.</h2>
      <p>Cienie do tekstu dodwane są komendą <b>"text shadow". Określić należy 4 wartości:</b></p>
     <ol>
         <li>px - horizontal offset, negatywna w lewo.</li>
@@ -88,14 +88,20 @@ CSS.
     <p>Elementy w CSS oparte są na pudełkach - każdym zajmującym inną część strony</p>
     <img src="images/box-model.png" alt="box model">
     <p>Do "Margin" i "Padding" podajemy wartości <b>pierwsza określa gór i dół strony</b> ; druga prawą i lewą stronę (auto - automatycznie rozdziela powierzchnię pomiędzy strony), trzecia i czwarta pozwalają kontrolować każdy margines.</p>
+    
+<h2>Hover.</h2>
+<h2>Display - tworzenie grida.</h2>
+<h2>Float.</h2>
+<h2>Position - fixed.</h2>
+<h2>Tworzenie dropdownów.</h2>
 
 </div>    
     
-<button onclick="myCOL3()">
-    <h2 id="JSC">Java Script</h2>
+<button id="JSC" class="mainbutton" onclick="myCOL3()">
+    Java Script.
 </button>
     
-<div id="myAKA3">
+<div class="rozdzial" id="myAKA3">
     
     <b><p>Variables - są to pojemniki na values, deklarowane są komendą "var" po czym nazwaniem ich. Należy pamiętać o dużych/małych znakach, js rozróżnia wielkość liter.</p>
     <b><ul>
@@ -136,14 +142,12 @@ CSS.
 
 <img id="dupa" src="images/Javazmianaobrazka.jpg">
 <img id="zamiana" src="images/4.jpg" alt="małpa">
-<h2>Stworzenie guzika zamykającego akapity - krok po kroku.</h2>
+<h2>Stworzenie guzika zamykającego akapity.</h2>
 
 </div>  
     
 <script src="scripts/main.js"></script>
-<a href="#TOP">Powrót na górę.</a>
-
-</div>
+<a id="top" href="#TOP">Powrót na górę.</a>
     
 </body>
 </html>
