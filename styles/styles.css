@@ -1,9 +1,11 @@
 ol, ul {
-    color: darkorchid;
+    color: darkolivegreen;
+    margin: 0px;
 }
 html {
     font-size: 10px;
     font-family: 'Roboto Slab', serif;
+    background-color: #F9F9BC;
 }
 h1 {
     font-size: 60px;
@@ -21,12 +23,11 @@ p, li {
 }
 h2 {
     font-size: 30px;
-}
-html {
-    background-color: #F9F9BC;
+     width: 1200px;
+    text-align: left;
 }
 body {
-    width: 900px;
+    width: 1200px;
     margin: auto auto;
     background-color: #F7F7D4;
     padding: 0 40px 40px 40px;
@@ -36,6 +37,34 @@ img {
     display: block;
     margin: auto;
 }
-script {
-    font-size: 60000px;
+p {
+    width: auto;
+}
+#dupa {
+    margin: 0px 5px 50px;
+    border: 3px solid black;
+    display: block;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.btn {
+    background-color: whitesmoke;
+    border: 2px solid black;
+    text-align: right;
+    padding: 50px 500px;
 }

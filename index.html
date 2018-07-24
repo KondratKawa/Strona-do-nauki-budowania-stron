@@ -6,88 +6,144 @@
     <title>Moja próbna strona</title>
 </head>
 <body>
-    <h1>Strona do nauki budowania stron</h1>
-    <h2>Dodawanie <b>akapitów i zdań</b></h2>
-        <p>Użycie "h1-6"służy do umieszczania akapitów</p>
-        <p>Ikonka "p" służy do umieszczania zdań</p>
+
+<div id="ABC">
+<h1 id="TOP">Strona do nauki budowania stron</h1>
+
+<div class="dropdown">
+    <span><h2>Spis treści:</h2></span>
+    <div class="dropdown-content">
+    <ol>
+    <li><a href="#Podstawy">Podstawy</a></li>
+    <li><a href="#CSS">CSS</a></li>
+    <li><a href="#JSC">Java Script</a></li>
+    </ol>
+    </div>
+</div>  
+  
+<button onclick="myCOL()"><h2>HTML.</h2></button>
+    
+<div id = "myAKA">
+
+<h2 id="Podstawy">Dodawanie akapitów i zdań</h2>
+    <p>Użycie "h1-6"służy do umieszczania akapitów</p>
+    <p>Ikonka "p" służy do umieszczania zdań</p>
    
-    <h2>Tworzenie list</h2>
-        <p><b>Listy dzielą się na ordered (uporządkowane, takie gdzie kolejność elementów ma znaczenie) i unordered (takie gdzie kolejność elementów nie ma znaczenia)</b></p>
+<h2 id="1">Tworzenie list</h2>
+    <p><b>Listy dzielą się na ordered (uporządkowane, takie gdzie kolejność elementów ma znaczenie) i unordered (takie gdzie kolejność elementów nie ma znaczenia)</b></p>
     <p>Elementy znajdujące się na listach oznacza się elementem <b>"li"</b></p>
-        <p> Listy ordered czyli uporządkowane oznacza się elementem<b>"ol"</b></p>
-        <b><ol>
-            <li>japka</li>
-            <li>ziemniaki</li>
-            <li>korwy</li>
-        </ol>
-        <p> Listy unordered oznacza się elementem <b>"ul"</b></p>
-        <ul>
-            <li>Japka</li>
-            <li>Ziemniaki</li>
-            <li>Korwy</li>
-        </ul></b>
+    <p> Listy ordered czyli uporządkowane oznacza się elementem<b>"ol"</b></p>
+    <b><ol>
+        <li>japka</li>
+        <li>ziemniaki</li>
+        <li>korwy</li>
+    </ol>
+    <p> Listy unordered oznacza się elementem <b>"ul"</b></p>
+    <ul>
+        <li>Japka</li>
+        <li>Ziemniaki</li>
+         <li>Korwy</li>
+    </ul></b>
        
         
-    <h2>Dodawanie linków</h2>
+<h2>Dodawanie linków</h2>
         <p>Linki dodajemy elementem "a" czyli anchor oraz atrybutem "href" wskazującym przywoływaną stronę</p>
         <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
         
-    <h2>Dodawanie obrazków</h2>
+<h2>Dodawanie obrazków</h2>
         <p>Obrazki dodajemy używając elemtu <b>"img"</b> wskazując źródło elementem <b>"src"</b> i elementem <b>"alt"</b> tekst, który wyświetlany jest w przypadku nie wyświetlenia się obrazka</p>
         <img src="images/1.jpg" alt="dupa">
-        <img src="images/2.jpg" alt="dupa">
     
-    <h1>CSS</h1>
+ </div>
+
+<button class="btn" onclick="myCOL2()">
+CSS.
+</button>
+
+<div id = "myAKA2">
+<p>Style mogą być aplikowane zarówno do pojedynczych elementów np. <b>h1</b>, jak i wielu na raz oddzielanych <b>przecinkiem np.ol,ul</b>.</p>
     
-    <p>Style mogą być aplikowane zarówno do pojedynczych elementów np. <b>h1</b>, jak i wielu na raz oddzielanych <b>przecinkiem np.ol,ul</b>.</p>
-    
-    <h2>Kolorowanie tekstu.</h2>
+<h2>Kolorowanie tekstu.</h2>
         <p>Przykładową aplikacją stylu jest określenie koloru, można określać wiele różnych właściwości (np. granic do jakich ma się ograniczać kolorowanie czy obramowanie) które oddzielamy <b>";".</b></p>
     
-    <h2>Dodawanie cienia do tekstu.</h2>
-        <p>Cienie do tekstu dodwane są komendą <b>"text shadow". Określić należy 4 wartości:</b></p>
-        <ol>
+<h2>Dodawanie cienia do tekstu.</h2>
+     <p>Cienie do tekstu dodwane są komendą <b>"text shadow". Określić należy 4 wartości:</b></p>
+    <ol>
         <li>px - horizontal offset, negatywna w lewo.</li>
         <li>px - vertical offset, negatywne w górę.</li>
         <li>px - blur radius, im większy tym większe rozmycie.</li>
         <li>czwarta określa kolor cienia.</li>
-        </ol>
+    </ol>
     
-    <h2>Zmiana Fontów.</h2>
-        <p>Fonty - można określać cechy takie jak np:</p>
-        <ul>
+<h2>Zmiana Fontów.</h2>
+    <p>Fonty - można określać cechy takie jak np:</p>
+    <ul>
         <li>rozmiar - <b>"font-size".</b></li>
         <li>wysokość linii oddzielającej wyrazy - <b>"Line height".</b></li>
         <li>czcionkę <b>"Font-family</b></li>
-        </ul>
+    </ul>
     <p>Podobnie jak w przypadku kolorów, cechy pisma mogą być aplikowane zarówno do pojedynczych jak i wielu elementów na raz.</p>
     
-    <h2>BOXy</h2>
-        <p>Elementy w CSS oparte są na pudełkach - każdym zajmującym inną część strony</p>
-        <img src="images/box-model.png" alt="box model">
-        <p>Do "Margin" i "Padding" podajemy wartości <b>pierwsza określa gór i dół strony</b> ; druga prawą i lewą stronę (auto - automatycznie rozdziela powierzchnię pomiędzy strony), trzecia i czwarta pozwalają kontrolować każdy margines.</p>
+<h2>BOXy</h2>
+    <p>Elementy w CSS oparte są na pudełkach - każdym zajmującym inną część strony</p>
+    <img src="images/box-model.png" alt="box model">
+    <p>Do "Margin" i "Padding" podajemy wartości <b>pierwsza określa gór i dół strony</b> ; druga prawą i lewą stronę (auto - automatycznie rozdziela powierzchnię pomiędzy strony), trzecia i czwarta pozwalają kontrolować każdy margines.</p>
+
+</div>    
     
-    <h2>Java Script</h2>
+<button onclick="myCOL3()">
+    <h2 id="JSC">Java Script</h2>
+</button>
+    
+<div id="myAKA3">
+    
     <b><p>Variables - są to pojemniki na values, deklarowane są komendą "var" po czym nazwaniem ich. Należy pamiętać o dużych/małych znakach, js rozróżnia wielkość liter.</p>
-        <b><ul>
+    <b><ul>
         <li>String - sekwencja tekstu oznaczana ''</li>
         <li>Number - nie są oznaczane quotami</li>
         <li>Boolean - oznaczane false/true</li>
         <li>Array - struktura pozwalająca przechowywać wiele wartości w jednym reference, wartości zamykane [], słowa oznaczane ''.</li>
         <li>Object - może to być cokolwiek.</li>
-        </ul></b>
+    </ul></b>
     <p>Comments - komentaze dodawane jak w CSS: /* Comment */.</p>
     <p>Operators</p>
-        <b><ul>
+    <b><ul>
         <li>Addition - służy do dodawania dwóch numerów, łączeniu dwóch stringów.</li>
         <li>Assignment - przypisuje wartość do Variable.</li>
         <li>Equality - eobi test czy dwie wartości są sobie równe i zwraca Boolean (true/false), 'symbol ==='.</li>
         <li>Not, Does-not-equal - zwraca logicznie przeciwną value od tej, którą poprzedza 'symbol !'. Może być używane wraz z equality '!==' operator sprawdza czy dwie wartości <i>nie</i> są równe.</li>
-        </ul></b>
+    </ul></b>
     <p>Conditionals - pozwala sprawdzić czy expression zwraca troe/false i w zależności od wyniku odpala inny kod, przykładowe 'if - else'.</p>
-    <p>Functions - służą do tworzenia funkcjonalności do późniejszego ponownego używania.</p>
-    <p>Events.</p></b>   
+    <p>Functions - służą do tworzenia funkcjonalności do późniejszego ponownego używania.Możliwe jest pisanie własnych funkcji. Przykładowe funkcje:</p>
+        <ul><li>document.querySelector('string - może być więcej niż jeden , przedzielone comami') - zwraca pierwszy element wewnątrz dokumentu.</li>    
+        <li>Alert('hello') to funkcja która tworzy wyskakujące okienko wewnątrz przeglądarki - string w tym przypadku określa wyskakującą treść. </li></ul>
+    <p>Events - są to struktury kodu oczekujące na wydarzenie się czegoś w przeglądarce np. naciśnięcie guzika.</p></b>
+    
+<h2>Słownik pojęć:</h2>
+<ul>
+<li>"var" = variable (storing values np. var x = 5) </li>
+<li>"getElementBy.." = pozwala na wyszukanie elementu HTML na kilka przykładowych sposobów:</li>
+    <ul>
+    <li>ById = znajduje element po Id.</li>
+    <li>ByTagName = znajduje wszystkie elementy z danym tagiem, np.TagName("h2"). Możliwe jest również znalezienie elementów z danym Id a później w nich tych o danym tagu.</li>
+    <li>ByClassName = pozwala znaleźć wszystkie elementy po klasie.</li>
+    <li>querySelectorALL = pozwala znajdować elementy o danym selektorze CSS.</li>
+    <li></li>
+    </ul>
+</ul>
+    
+<h2>Image changer w js - krok po kroku.</h2>
+
+<img id="dupa" src="images/Javazmianaobrazka.jpg">
+<img id="zamiana" src="images/4.jpg" alt="małpa">
+<h2>Stworzenie guzika zamykającego akapity - krok po kroku.</h2>
+
+</div>  
+    
 <script src="scripts/main.js"></script>
-<script src="scripts/popup.js"></script>
+<a href="#TOP">Powrót na górę.</a>
+
+</div>
+    
 </body>
 </html>
