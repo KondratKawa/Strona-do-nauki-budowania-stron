@@ -1,4 +1,4 @@
-alert('Wstawaj piękna kobietko');
+alert('alert');
 
 var myImage = document.getElementById("zamiana");
 
