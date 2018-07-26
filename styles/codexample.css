@@ -1,0 +1,38 @@
+.otwieracz {
+    color: indianred
+}
+.zamykacz {
+    color: indianred
+}
+.koniec, .zamykacz, .otwieracz {
+    color: greenyellow;
+}
+.between {
+    color: #ffff80;
+}
+code, .codex {
+    color: white;
+    font-size: 20px; 
+}
+html {
+    background-color: black
+}
+.codex {
+    width: auto;
+    height: 50px;
+    text-align: center;
+    vertical-align: baseline;
+    background-color: yellowgreen;
+}
+.language {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 2.5;
+}
+.counter {
+    background-color: #ff3333;
+    margin: 0px 10px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
